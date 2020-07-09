@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width= devicewidth, initial-scale">
+	<style type="text/css"> 
+	.responsive{
+	bottom:  50px;
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+</style>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="button.css"></link>
+</head>
+<body>
+	<!--<div class="clock">
+		<h2>The time is now</h2>
+		<div><span id="hour">00</span>Hours<span></span></div>
+		<div><span id="minutes">00</span><span>Minutes</span></div>
+		<div><span id="seconds">00</span><span>Seconds</span></div>
+	</div>-->
+	<img class="responsive" src="img/pngegg.png">
+	<div class="middle">
+		<h1 data-text ="Welcome to the IpuSolutions" style="color: #000"> Welcome to the IpuSolutions</h1><br><br>
+		<a href="#" class="btn btn1">BCA</a>
+		<a href="#" class="btn btn2">MCA</a>
+	</div>
+	<script type="text/javascript">
+		function clock(){
+			var hours = document.getElementById('hour');
+			var minutes = document.getElementById('minutes');
+			var seconds = document.getElementById('seconds');
+
+			var h = new Date().getHours();
+			var m = new Date().getMinutes();
+			var s = new Date().getSeconds();
+
+			hours.innerHTML = h;
+			minutes.innerHTML = m;
+			seconds.innerHTML = s;
+
+			var interval = setInterval(clock, 1000);
+
+		}
+	</script>
+
+</body>
+</html>
